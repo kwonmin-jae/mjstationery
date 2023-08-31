@@ -1,0 +1,89 @@
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:30px;width:60px;height:50px;position:relative;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#000;border:3px solid white;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:100001;position: fixed;}
+input[id="menuicon"]:checked + label span {background:#fff;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:300px;height:100%;background:lightskyblue;position:fixed;top:0;left:-300px;z-index:100000;transition:all .35s;}
+input[id="menuicon"]:checked + label + div {left:0;}
+
+.layout {
+    position: relative;
+}
+.layout__div {
+    /* position: absolute; */
+    /* background-color: white; */
+    /* opacity: 0.5; */
+    position: fixed; /* 버튼 고정 위치 */
+    z-index: 100002;
+}
+.layout__div2 {
+    /* position: absolute; */
+    z-index: 900;
+}
+
+.sidebar {
+    display: flex;
+}
+.sidebar__nulldiv1 {
+    width: 30px;
+    height: 100%;
+}
+
+.logo a {
+    background-color: white;
+}
+
+.logo__divs {
+    display: flex;
+    /* flex-direction: row; */
+
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.logo__1,
+.logo__2 {
+    flex: 1;
+
+    padding: 5px;
+}
+.logo__nulldiv {
+    width: 10px;
+
+    /* background-color: lightskyblue; */
+}
+
+.logo__0 {
+
+}
+.logo__1 a {
+    font-size: 19px;
+    font-weight: bold;
+    color: #ff6464;
+
+    /* background-color: white; */
+}
+.logo__2 a {
+    font-size: 13.5px;
+    font-weight: bold;
+    color: #444B6E;
+
+    /* background-color: white; */
+}
+
+/* .sidebar__alldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */

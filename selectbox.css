@@ -1,0 +1,12 @@
+select {
+    width: 165px;
+    height: 41px;
+    font-size: 15px;
+    color: #000;
+    border: 2px solid #000;
+}
+
+input[type="date"] {
+    width: 165px;
+    height: 41px;
+}

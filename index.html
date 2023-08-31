@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hover.css">
+    <link rel="stylesheet" href="./modalpopup.css">
+    <link rel="stylesheet" href="./pet.css">
+    <link rel="stylesheet" href="./drag2.css">
+    <link rel="stylesheet" href="./selectbox.css">
+    <link rel="stylesheet" href="./sidebar3.css">
+    <link rel="stylesheet" href="./quick7.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swipeautoslide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swipeautoslide.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./swipeautoslide.js" defer></script>
+    <script src="https://kit.fontawesome.com/0b664668d9.js" crossorigin="anonymous"></script>
+    <script src="./quick1.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./dday.js" defer></script>
+    <script src="./drag.js" defer></script>
+    <script src="./pet.js" defer></script>
+</head>
+<body>
+
+    <div class="mover" id="Drag__div">
+        <div class="img__div">
+        <img src="./up-down-left-right-solid.svg" alt="">
+        </div>
+        <div class="img__div2" id="Drag__div" onclick='toggleDrag__div()'>
+            <img src="./x-solid.svg" alt="">
+        </div>
+        <div class="txt__div">
+        1월에는 모든 상품을<br>10% 할인합니다.<br>
+        직거래는 주말 및 공휴일은<br>운영하지 않습니다.<br>
+        기타 문의사항은 연락 주시거나<br>문의하기를 통해 문의해주세요.<br>
+        </div>
+    </div>
+
+    <!-- // 사이드바 전체 div 첫번째 -->
+    <div class="sidebar__alldiv">
+
+    <!-- // 사이드바 전체 div 두번째 -->
+    <div class="layout">
+    <!-- // 사이드바 전체 div 세번째 -->
+    <div class="layout__div">
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- // 사이드바 버튼 제외하고 내용만 있는 div -->
+    <div class="sidebar">
+
+        <!-- 사이드바 빈 div -->
+        <div class="sidebar__nulldiv1"></div>
+
+        <!-- // 사이드바 빈 div 밑에 내용 div -->
+        <div class="sidebar__nulldiv2">
+        <br><br><br><br><br>
+
+        <!-- // 1. 자매 쇼핑몰 제외한 내용 div -->
+        <div class="sidebar__main">
+
+        <details>
+            <summary>☺ 직거래 예약</summary><br>
+            <input type="date"/><br>
+            <select>
+                <option>직거래 지역 선택하기</option>
+                <option>세종</option>
+                <option>대전</option>
+                <option>청주</option>
+            </select><br>
+            <a href="#">010-0000-0000</a><br>
+            <a href="#">연락 부탁드립니다.</a>
+        </details>
+        <br>
+        <details>
+            <summary>☺ COMMUNITY</summary><br>
+            <a href="#">공지사항</a><br>
+            <a href="#">전체후기</a><br>
+            <a href="#">베스트후기</a><br>
+            <a href="#">자주묻는질문</a><br>
+            <a href="#">질문게시판</a><br>
+            <a href="#">자유게시판</a>
+        </details>
+        <br>
+        <details>
+            <summary>☺ EVENT</summary><br>
+            <a href="#">진행중인 이벤트</a><br>
+            <a href="#">진행 예정인 이벤트</a><br>
+            <a href="#">마감된 이벤트</a>
+        </details>
+
+        </div>
+
+        <!-- // 2. 자매 쇼핑몰만 따로 있는 div -->
+        <br><div class="logo__0">☺ 자매 쇼핑몰</div>
+        <br><div class="logo__divs">
+        <br><div class="logo__1"><a href="https://kwonmin-jae.github.io/berryfarm/" target="_blank">BERRYFARM</a></div>
+        <div class="logo__nulldiv"></div>
+        <div class="logo__2"><a href="https://kwonmin-jae.github.io/lavendershop/" target="_blank">ravender shop</a></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="layout__div2">
+    <!-- 퀵 메뉴 -->
+    <div class="fly">
+        <button>
+            <a href="#">△TOP</a>
+        </button>
+        <!-- <br><br>메뉴 바로가기<br> -->
+
+        <label class="switch">
+            <input class="switch__input" type="checkbox" role="switch">
+            <svg class="switch__scene" viewBox="0 0 48 24" width="48px" height="24px" aria-hidden="true">
+                <symbol id="switch-cloud" viewBox="0 0 10 6">
+                    <path d="m7.5,1c-.238,0-.463.049-.675.125-.55-.681-1.381-1.125-2.325-1.125-1.13,0-2.103.633-2.614,1.556-.124-.033-.251-.056-.386-.056-.828,0-1.5.672-1.5,1.5s.672,1.5,1.5,1.5c.134,0,.262-.023.386-.056.511.924,1.484,1.556,2.614,1.556.943,0,1.775-.444,2.325-1.125.212.076.437.125.675.125,1.105,0,2-.895,2-2s-.895-2-2-2Z"/>
+                </symbol>
+                <symbol id="switch-star" viewBox="0 0 4 4">
+                    <path d="m2.277.172l.379.767c.045.091.132.154.233.169l.847.123c.253.037.355.348.171.527l-.613.597c-.073.071-.106.173-.089.273l.145.843c.043.252-.222.445-.448.326l-.757-.398c-.09-.047-.197-.047-.287,0l-.757.398c-.227.119-.491-.073-.448-.326l.145-.843c.017-.1-.016-.202-.089-.273L.094,1.758c-.183-.179-.082-.49.171-.527l.847-.123c.101-.015.188-.078.233-.169l.379-.767c.113-.23.441-.23.554,0Z"/>
+                </symbol>
+                <defs>
+                    <linearGradient id="switch-sun1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="hsl(18,90%,50%)" />
+                        <stop offset="1" stop-color="hsl(43,90%,50%)" />
+                    </linearGradient>
+                    <linearGradient id="switch-sun2" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="hsl(43,90%,50%)" />
+                        <stop offset="1" stop-color="hsl(33,90%,50%)" />
+                    </linearGradient>
+                    <linearGradient id="switch-moon1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="hsl(213,90%,95%)" />
+                        <stop offset="1" stop-color="hsl(213,90%,85%)" />
+                    </linearGradient>
+                    <linearGradient id="switch-moon2" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="hsla(213,90%,95%,0)" />
+                        <stop offset="1" stop-color="hsla(213,90%,95%,1)" />
+                    </linearGradient>
+                    <linearGradient id="switch-moon3" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="hsla(213,90%,75%,1)" />
+                        <stop offset="1" stop-color="hsla(213,90%,75%,0)" />
+                    </linearGradient>
+                    <linearGradient id="switch-cloud1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="hsla(0,0%,100%,1)" />
+                        <stop offset="1" stop-color="hsla(0,0%,100%,0)" />
+                    </linearGradient>
+                </defs>
+                <g class="switch__stars" fill="hsl(213,90%,95%)">
+                    <g class="switch__star" transform="translate(28,14) scale(0)">
+                        <use href="#switch-star" width="4px" height="4px" />
+                    </g>
+                    <g class="switch__star" transform="translate(21,13) scale(0)">
+                        <use href="#switch-star" width="4px" height="4px" />
+                    </g>
+                    <g class="switch__star" transform="translate(17,10) scale(0)">
+                        <use href="#switch-star" width="4px" height="4px" />
+                    </g>
+                    <g class="switch__star" transform="translate(24,6) scale(0)">
+                        <use href="#switch-star" width="4px" height="4px" />
+                    </g>
+                    <g class="switch__star" transform="translate(31,5) scale(0)">
+                        <use href="#switch-star" width="4px" height="4px" />
+                    </g>
+                </g>
+                <g class="switch__handle" transform="translate(12,12)">
+                    <g class="switch__handle-side">
+                        <circle r="8" fill="url(#switch-sun1)" />
+                        <circle r="6.5" fill="url(#switch-sun2)" />
+                    </g>
+                    <g class="switch__handle-side" opacity="0">
+                        <circle r="8" fill="url(#switch-moon1)" />
+                        <circle r="6.5" fill="url(#switch-moon2)" />
+                        <clipPath id="switch-moon-clip">
+                            <circle class="switch__moon-hole" r="1.5" cx="-6" cy="2" />
+                            <circle class="switch__moon-hole" r="1.5" cx="-1" cy="3" />
+                            <circle class="switch__moon-hole" r="2" cx="-1" cy="8" />
+                            <circle class="switch__moon-hole" r="1" cx="2" cy="0" />
+                            <circle class="switch__moon-hole" r="5" cx="8" cy="6" />
+                        </clipPath>
+                        <circle r="8" fill="url(#switch-moon3)" clip-path="url(#switch-moon-clip)" />
+                    </g>
+                </g>
+                <g fill="url(#switch-cloud1)">
+                    <use class="switch__cloud" href="#switch-cloud" width="10" height="6" transform="translate(34,9)" />
+                    <use class="switch__cloud" href="#switch-cloud" width="10" height="6" transform="translate(24,13) scale(0.8)" />
+                    <use class="switch__cloud" href="#switch-cloud" width="10" height="6" transform="translate(24,5) scale(0.6)" />
+                </g>
+            </svg>
+            <span class="switch__text">Dark Mode</span>
+        </label>
+
+        <br><a href="#tab0">메인 페이지</a>
+        <br><a href="#tab1">전체상품</a>
+        <br><a href="#tab1-2">베스트상품</a>
+        <br><a href="#tab1-3">신상품</a>
+        <br><a href="#tab2">사무용품</a>
+        <br><a href="#tab3">미술용품</a>
+        <br><a href="#tab4">대량구매</a>
+        <br><a href="#tab5">데코레이션</a>
+        <br><a href="#tab6">세트상품</a>
+        <br><a href="#tab7">기타상품</a>
+        <br><a href="#tab8">인스타그램</a>
+    </div>
+    
+    <!-- 내용 -->
+    <div class="con">
+
+        <div class="top__menu">
+            <div class="first__menu" id="tab0">회원가입시 구매금액의 10% 적립</div>
+            <div><a href="#">로그인</a></div>
+            <div><a href="#">회원가입</a></div>
+            <div><a href="#">장바구니</a></div>
+            <div><a href="#">마이페이지</a></div>
+            <div><a href="#">고객센터</a></div>
+            <div><a href="#">공지사항</a></div>
+            <div><a href="#">주문조회</a></div>
+            <div><a href="#">배송조회</a></div>
+        </div>
+
+        <header>
+            <div>
+                <h1 class="logo"><a href="#">엠제이문구</a></h1>
+                <h4 class="logo2">🌷 다양한 문구류를 판매하는 온라인 쇼핑몰 🌷</h4>
+            </div>
+        </header>
+
+        <!-- // 오픈일 디데이 계산 -->
+        <div class="sns-list2-row">
+            <div id="count"></div>
+        </div>
+
+        <!-- 빈 div -->
+        <div class="null__div"></div>
+
+        <!-- // 탭 메뉴 형식 추가해보기 -->
+        <!-- 탭 버튼 -->
+        <nav class="tab">
+            <ul>
+                <li><a href="#tab1">전체상품</a></li>
+                <li><a href="#tab1-2">베스트상품</a></li>
+                <li><a href="#tab1-3">신상품</a></li>
+                <li><a href="#tab2">사무용품</a></li>
+                <li><a href="#tab3">미술용품</a></li>
+                <li><a href="#tab4">대량구매</a></li>
+                <li><a href="#tab5">데코레이션</a></li>
+                <li><a href="#tab6">세트상품</a></li>
+                <li><a href="#tab7">기타상품</a></li>
+                <li><a href="#tab8">인스타그램</a></li>
+            </ul>
+        </nav>
+
+        <!-- // swipe 자동 슬라이드 라이브러리 추가 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            <div class="swiper-slide"><img src="./note-2527442_1280.png" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+            
+        <!-- // 상품 리스트 추가해보기 -->
+        <div class="all_div" id="tab1-2">
+            <div class="label_content">
+                <div class="best__list">BEST</div>
+                <div class="img"><img src="./note-2527442_1280.png"></div>
+                <h3 class="name">메모지 1</h3>
+                <p class="desc">MADE IN KOREA</p>
+                <div class="price">2,000원</div>
+                <input type="checkbox" id="info">
+                <label for="info">[상세보기]</label><!-- On 버튼 -->
+                <div class="content"><!-- 컨텐츠 -->
+                    <div>
+                        <ul>
+                            <li><div>1개</div></li>
+                            <li><div>2개</div></li>
+                            <li><div>3개</div></li>
+                            <li><div>4개</div></li>
+                            <li><div>5개</div></li>
+                            <li><div>6개</div></li>
+                        </ul>
+                    </div>
+                    <label for="info"><span>x</span></label><!-- close 버튼 -->
+                </div>
+            </div>
+            <div class="label_content">
+                <div class="best__list">BEST</div>
+                <div class="img2"><img src="./note-2527442_1280.png"></div>
+                <h3 class="name2">메모지 1</h3>
+                <p class="desc2">MADE IN KOREA</p>
+                <div class="price2">2,000원</div>
+                <input type="checkbox" id="info2">
+                <label for="info2">[상세보기]</label><!-- On 버튼 -->
+                <div class="content2"><!-- 컨텐츠 -->
+                    <div>
+                        <ul>
+                            <li><div>1개</div></li>
+                            <li><div>2개</div></li>
+                            <li><div>3개</div></li>
+                            <li><div>4개</div></li>
+                            <li><div>5개</div></li>
+                            <li><div>6개</div></li>
+                        </ul>
+                    </div>
+                    <label for="info2"><span>x</span></label><!-- close 버튼 -->
+                </div>
+            </div>
+            <div class="label_content">
+                <div class="best__list">BEST</div>
+                <div class="img3"><img src="./note-2527442_1280.png"></div>
+                <h3 class="name3">메모지 1</h3>
+                <p class="desc3">MADE IN KOREA</p>
+                <div class="price3">2,000원</div>
+                <input type="checkbox" id="info3">
+                <label for="info3">[상세보기]</label><!-- On 버튼 -->
+                <div class="content3"><!-- 컨텐츠 -->
+                    <div>
+                        <ul>
+                            <li><div>1개</div></li>
+                            <li><div>2개</div></li>
+                            <li><div>3개</div></li>
+                            <li><div>4개</div></li>
+                            <li><div>5개</div></li>
+                            <li><div>6개</div></li>
+                        </ul>
+                    </div>
+                    <label for="info3"><span>x</span></label><!-- close 버튼 -->
+                </div>
+            </div>
+            </div>
+
+            <div class="all_div">
+            <div class="label_content">
+                <div class="best__list">BEST</div>
+                <div class="img4"><img src="./note-2527442_1280.png"></div>
+                <h3 class="name4">메모지 1</h3>
+                <p class="desc4">MADE IN KOREA</p>
+                <div class="price4">2,000원</div>
+                <input type="checkbox" id="info4">
+                <label for="info4">[상세보기]</label><!-- On 버튼 -->
+                <div class="content4"><!-- 컨텐츠 -->
+                    <div>
+                        <ul>
+                            <li><div>1개</div></li>
+                            <li><div>2개</div></li>
+                            <li><div>3개</div></li>
+                            <li><div>4개</div></li>
+                            <li><div>5개</div></li>
+                            <li><div>6개</div></li>
+                        </ul>
+                    </div>
+                    <label for="info4"><span>x</span></label><!-- close 버튼 -->
+                </div>
+            </div>
+            <div class="label_content">
+                <div class="best__list">BEST</div>
+                <div class="img5"><img src="./note-2527442_1280.png"></div>
+                <h3 class="name5">메모지 1</h3>
+                <p class="desc5">MADE IN KOREA</p>
+                <div class="price5">2,000원</div>
+                <input type="checkbox" id="info5">
+                <label for="info5">[상세보기]</label><!-- On 버튼 -->
+                <div class="content5"><!-- 컨텐츠 -->
+                    <div>
+                        <ul>
+                            <li><div>1개</div></li>
+                            <li><div>2개</div></li>
+                            <li><div>3개</div></li>
+                            <li><div>4개</div></li>
+                            <li><div>5개</div></li>
+                            <li><div>6개</div></li>
+                        </ul>
+                    </div>
+                    <label for="info5"><span>x</span></label><!-- close 버튼 -->
+                </div>
+            </div>
+            <div class="label_content">
+                <div class="best__list">BEST</div>
+                <div class="img6"><img src="./note-2527442_1280.png"></div>
+                <h3 class="name6">메모지 1</h3>
+                <p class="desc6">MADE IN KOREA</p>
+                <div class="price6">2,000원</div>
+                <input type="checkbox" id="info6">
+                <label for="info6">[상세보기]</label><!-- On 버튼 -->
+                <div class="content6"><!-- 컨텐츠 -->
+                    <div>
+                        <ul>
+                            <li><div>1개</div></li>
+                            <li><div>2개</div></li>
+                            <li><div>3개</div></li>
+                            <li><div>4개</div></li>
+                            <li><div>5개</div></li>
+                            <li><div>6개</div></li>
+                        </ul>
+                    </div>
+                    <label for="info6"><span>x</span></label><!-- close 버튼 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="hover__animation__div" id="tab1-3">
+        <div class="new__list">NEW</div>
+        <!-- // 호버시 확대되는 애니메이션 추가해보기 -->
+        <div class="box-container">
+            <div class="box"><img src="./note-2527442_20.png" alt=""></div>
+            <div class="box"><img src="./note-2527442_20.png" alt=""></div>
+            <div class="box"><img src="./note-2527442_20.png" alt=""></div>
+            <div class="box"><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="box-container-div">
+            <div>메모지 1</div>
+            <div>메모지 1</div>
+            <div>메모지 1</div>
+            <div>메모지 1</div>
+        </div>
+        <div class="box-container-div">
+            <div>판매가 : 2,000원</div>
+            <div>판매가 : 2,000원</div>
+            <div>판매가 : 2,000원</div>
+            <div>판매가 : 2,000원</div>
+        </div>
+        <!-- 코드 끝 -->
+        </div>
+
+        <!-- 탭 내용 -->
+        <div id="tab1" class="tab__content">
+        <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+
+        <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+
+        <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+
+        </div>
+        
+        <!-- 탭 내용 -->
+        <div id="tab2" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+
+        <!-- 탭 내용 -->
+        <div id="tab3" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+            <!-- 탭 내용 -->
+        <div id="tab4" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+            <!-- 탭 내용 -->
+        <div id="tab5" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+            <!-- 탭 내용 -->
+        <div id="tab6" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+            <!-- 탭 내용 -->
+        <div id="tab7" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+            <!-- 탭 내용 -->
+        <div id="tab8" class="tab__content">
+            
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            <!-- 상품 리스트 -->
+        <div class="top__menu3">
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+            <div><img src="./note-2527442_20.png" alt=""></div>
+        </div>
+
+        <div class="top__menu4">
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+            <div>상품준비중</div>
+        </div>
+        <div class="top__menu4">
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+            <div>상품정보 : MADE IN KOREA</div>
+        </div>
+        <div class="top__menu4">
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+            <div>정가 : 미정</div>
+        </div>
+        <div class="top__menu4">
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+            <div>판매가 : 미정</div>
+        </div>
+        <!-- 상품 리스트 끝 -->
+    
+            </div>
+
+            <!-- 별도 푸터 작성하기 -->
+            <!-- 바텀 링크 -->
+            <div class="link__div">
+                <ul class="link__divli">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">쇼핑몰 이용안내</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">기타문의</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                </ul>
+            </div>
+            <!-- 바텀 CS 정보 -->
+            <div class="footer__div">
+                <div class="footer__div1">
+                    <div class="block50-box-color">
+                        <div class="boxcolortxt1">엠제이문구</div><div class="boxcolortxt2">MADE IN KOREA</div><div class="boxcolortxt3">회사소개 이용안내 개인정보처리방침 이용약관<br>
+                            법인명(상호) : 디자인교과서 대표자(성명) : 서수정<br>
+                            사업자 등록번호 : 000-0000-0000<br>
+                            통신판매업 신고 : 000-0000-0000 [사업자정보확인]<br>
+                            전화 : 1644-8198 팩스 : 1644-8198<br>
+                            주소 : 04387 서울특별시 용산구 서빙고로 17 (한강로3가)<br>
+                            용산 센트럴파크해링턴스퀘어 1층 1035호</div><div class="boxcolortxt4">
+                            개인정보관리책임자 : 서수정(help@design-book.co.kr)
+                            </div>
+                    </div>
+                </div>
+                <!-- block51 -->
+                <div class="footer__div2">
+                    <div class="block51-box-color">
+                        <div class="boxcolortxt5">고객 상담 전화</div>
+                        <div class="boxcolortxt6">1644-0000</div>
+                        <div class="boxcolortxt7">
+                            평일 오전 10:00 - 오후 5:00 토요일.일요일.공휴일 휴무</div></div>
+                    <div class="block51-box-color10">
+                        <div class="boxcolortxt8">무통장 입금계좌</div>
+                        <div class="boxcolortxt9">0123-456-78910</div>
+                        <div class="boxcolortxt10">
+                            신한은행 예금주: 디자인교과서</div></div>
+                </div>        
+            </div>
+            <!-- 푸터 -->
+            <footer class="block-row">
+                <p>COPYRIGHT © 2023 BERRYFARM. ALL RIGHTS RESERVED.</p>
+            </footer>
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
